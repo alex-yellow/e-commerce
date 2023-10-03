@@ -1,0 +1,12 @@
+<h2><a href="/admin">Admin Panel</a></h2>
+<h1>Catalog products</h1>
+
+{{#each products}}
+    <div>
+        <h2><a href="/products/{{id}}">{{name}}</a></h2>
+        <h3>{{description}}</h3>
+        <h3>{{price}}</h3>
+    </div>
+    <hr>
+{{/each}}
+

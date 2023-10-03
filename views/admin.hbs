@@ -1,0 +1,32 @@
+<h1>Admin Panel</h1>
+
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </thead>
+    <tbody>
+        {{#each products}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{description}}</td>
+                <td>{{price}}</td>
+                <td><a href="/products/{{id}}">Show</a></td>
+                <td><a href="/edit/{{id}}">Edit</a></td>
+                <td><a href="/delete/{{id}}">Delete</a></td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<div class="add">{{{add}}}</div>
+<div class="edit">{{edit}}</div>
+<div class="delete">{{delete}}</div>
+
+<h3><a href="/add">Add Product</a></h3>
+
+<h3><a href="/">At Home</a></h3>
